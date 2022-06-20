@@ -1,0 +1,216 @@
+:root {
+  --background-color: #ffffff;
+  --main-font-color: #212121;
+  --navigate-contacts-color: #757575;
+  --logo-first-part-color-blue: #2196f3;
+  --logo-second-part-color-black: #000000;
+  --footer-addres-color: #ffffff99;
+  --add-service-background-color: #2f303a;
+  --header-line-color: #ececec;
+  --background-btn-color: #f5f4fa;
+  --background-portfolio-list-color: #eeeeee;
+  --hover-add-service-btn-background: #188ce8;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+body {
+  background: var(--background-color);
+  color: var(--main-font-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+/* Header */
+a {
+  text-decoration: none;
+}
+.logo {
+  /* text-decoration: none; */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-first {
+  color: var(--logo-first-part-color-blue);
+}
+.logo-second {
+  color: var(--logo-second-part-color-black);
+}
+.navigate a {
+  list-style: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-font-color);
+}
+ul {
+  list-style: none;
+}
+.contacts a {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--navigate-contacts-color);
+}
+.hover-link:hover a,
+.hover-link:focus a {
+  color: var(--logo-first-part-color-blue);
+}
+/* Main */
+/* Add service */
+.add-service {
+  background-color: var(--add-service-background-color);
+}
+.add-sevice-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--background-color);
+}
+.add-service-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--background-color);
+  background-color: var(--logo-first-part-color-blue);
+  cursor: pointer;
+}
+.add-service-button:hover,
+.add-service-button:focus {
+  background-color: var(--hover-add-service-btn-background);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+/* Benefits */
+.benefits-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.benefits-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--navigate-contacts-color);
+}
+/* Activity */
+.activity-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/* Team */
+.team {
+  background-color: var(--background-team-color);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-proffesion {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--navigate-contacts-color);
+}
+
+/* Portfolio */
+.button-filter {
+  font-family: inherit;
+  letter-spacing: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--background-btn-color);
+}
+.button-filter:hover,
+.button-filter:focus {
+  color: var(--background-color);
+  background-color: var(--logo-first-part-color-blue);
+}
+.project {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-font-color);
+}
+.type-project {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--navigate-contacts-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--add-service-background-color);
+  font-style: normal;
+  font-family: 'Roboto';
+}
+.adress-map a {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--background-color);
+}
+.adress-email a {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--footer-addres-color);
+}
+.adress-tel a {
+  font-family: inherit;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--footer-addres-color);
+}
+.logo-third {
+  font-family: 'Raleway';
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--background-color);
+}
