@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 :root {
   --background-color: #ffffff;
   --main-font-color: #212121;
@@ -29,6 +37,10 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /* Header */
 a {
@@ -94,6 +106,8 @@ ul {
   color: var(--background-color);
   background-color: var(--logo-first-part-color-blue);
   cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 .add-service-button:hover,
 .add-service-button:focus {
@@ -154,6 +168,8 @@ ul {
   text-align: center;
   cursor: pointer;
   background-color: var(--background-btn-color);
+  border-radius: 4px;
+  padding: 6px 22px;
 }
 .button-filter:hover,
 .button-filter:focus {
