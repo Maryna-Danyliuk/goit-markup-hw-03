@@ -1,11 +1,11 @@
-html {
+/* html {
   box-sizing: border-box;
 }
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
+} */
 :root {
   --background-color: #ffffff;
   --main-font-color: #212121;
@@ -37,12 +37,29 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-
-  width: 1170px;
+}
+.container {
+  display: border-box;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
 /* Header */
+
+.stydio-header {
+  /* display: inherit; */
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+}
+.navigate-container {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+
+  align-self: center;
+}
 a {
   text-decoration: none;
 }
@@ -61,6 +78,7 @@ a {
   color: var(--logo-second-part-color-black);
 }
 .navigate a {
+  margin-top: 32px;
   list-style: none;
   font-weight: 500;
   line-height: 1.14;
@@ -83,9 +101,21 @@ ul {
 /* Main */
 /* Add service */
 .add-service {
+  display: flex;
+  align-items: center;
+  vertical-align: auto;
+  flex-direction: column;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  /* justify-content: center; */
   background-color: var(--add-service-background-color);
 }
 .add-sevice-title {
+  display: block;
+  box-sizing: inherit;
+  width: 696px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -106,6 +136,7 @@ ul {
   color: var(--background-color);
   background-color: var(--logo-first-part-color-blue);
   cursor: pointer;
+  border: none;
   border-radius: 4px;
   padding: 10px 32px;
 }
@@ -115,13 +146,29 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* Benefits */
+.benefits {
+  padding: 94px 0 94px 0;
+}
+.benefits-items {
+  display: flex;
+  flex-direction: row;
+  width: 270;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.benefits-items:first-child {
+  margin-left: 0;
+}
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .benefits-text {
+  display: flex;
+  flex-wrap: nowrap;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -159,6 +206,16 @@ ul {
 }
 
 /* Portfolio */
+.portfolio-container {
+  border-top: 1px solid var(--header-line-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.portfolio-btn {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
 .button-filter {
   font-family: inherit;
   letter-spacing: inherit;
@@ -168,13 +225,44 @@ ul {
   text-align: center;
   cursor: pointer;
   background-color: var(--background-btn-color);
+  border: none;
   border-radius: 4px;
   padding: 6px 22px;
+  margin-right: 8px;
 }
 .button-filter:hover,
 .button-filter:focus {
   color: var(--background-color);
   background-color: var(--logo-first-part-color-blue);
+}
+.portfolio-elements {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 2px;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 0;
+  column-gap: 30px;
+}
+.portfolio-item {
+  width: 370px;
+  padding-top: 0px;
+  /* padding-left: 24px;
+  padding-right: 24px; */
+  padding-bottom: 20px;
+  box-sizing: inherit;
+  border: 1px solid var(--background-portfolio-list-color);
+  justify-content: flex-end;
+}
+.portfolio-item img {
+  margin-bottom: 20px;
+}
+.portfolio-item h2 {
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+.portfolio-item p {
+  margin-top: 0;
 }
 .project {
   font-weight: 700;
