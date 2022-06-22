@@ -195,14 +195,35 @@ ul {
   column-gap: 30px;
 }
 /* Team */
-.team {
-  background-color: var(--background-team-color);
+.team.container {
+  background-color: var(--background-btn-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 0;
 }
+.team.container ul {
+  padding-left: 0;
+}
+.team-items {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  background-color: var(--background-color);
+  padding-left: 0;
+}
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.team-name,
+.team-proffesion {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .team-name {
   font-weight: 500;
