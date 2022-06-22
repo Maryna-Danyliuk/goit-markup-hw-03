@@ -175,11 +175,24 @@ ul {
   color: var(--navigate-contacts-color);
 }
 /* Activity */
+.activity {
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 94px;
+}
 .activity-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.activity-items {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
 }
 /* Team */
 .team {
