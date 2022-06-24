@@ -57,11 +57,15 @@ p {
   margin: 0;
   padding: 0;
 }
-/*========================================================================*/
+/*======================================================================== */
 /* Header */
 
 .stydio-header {
   display: flex;
+  border-bottom: 1px solid var(--header-line-color);
+}
+.portfolio-header {
+  border-bottom: 1px solid var(--header-line-color);
 }
 .main-nav {
   display: flex;
@@ -150,14 +154,12 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
 
-  /* justify-content: center; */
   background-color: var(--add-service-background-color);
 }
 .add-sevice-title {
   display: block;
   box-sizing: inherit;
   width: 696px;
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -165,13 +167,14 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-color);
+  margin-bottom: 30px;
 }
 .add-service-button {
+  display: inherit;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -191,6 +194,9 @@ ul {
 .benefits {
   padding: 94px 0 94px 0;
 }
+.benefits-hover:not(:first-chld) {
+  margin-left: 30px;
+}
 .benefits-items {
   display: flex;
   flex-direction: row;
@@ -198,9 +204,7 @@ ul {
   justify-content: space-between;
   column-gap: 30px;
 }
-.benefits-items:first-child {
-  margin-left: 0;
-}
+
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
@@ -221,7 +225,6 @@ ul {
   margin-top: 0;
   padding-left: 0;
   padding-right: 0;
-  /* padding-bottom: 94px; */
 }
 .activity-title {
   font-weight: 700;
@@ -241,8 +244,6 @@ ul {
   background-color: var(--background-btn-color);
   padding-left: 0;
   padding-right: 0;
-
-  /* text-align: center; */
 }
 .team-items {
   display: flex;
@@ -290,11 +291,7 @@ ul {
 }
 
 /* Portfolio */
-.portfolio-container {
-  border-top: 1px solid var(--header-line-color);
-  /* padding-top: 94px;
-  padding-bottom: 94px; */
-}
+
 .portfolio-btn {
   display: flex;
   flex-wrap: nowrap;
