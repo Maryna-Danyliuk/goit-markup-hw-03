@@ -11,6 +11,8 @@
   --background-portfolio-list-color: #eeeeee;
   --hover-add-service-btn-background: #188ce8;
   --padding-vertical-container: 94px;
+  --size-padding-portfolio: 300px;
+  --item-portfolio-count: 5;
 }
 .visually-hidden {
   position: absolute;
@@ -69,7 +71,6 @@ body {
   display: flex;
   border-bottom: 1px solid var(--header-line-color);
   text-align: center;
-  /* padding: 32px 0; */
 }
 .portfolio-header {
   border-bottom: 1px solid var(--header-line-color);
@@ -115,7 +116,6 @@ a {
   display: block;
   padding: 32px 0;
   margin-top: 32px;
-  /* list-style: none; */
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -190,9 +190,6 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* Benefits */
-/* .section.benefits {
-  padding: ;
-} */
 .benefuts.container {
   padding-left: 0;
   padding-right: 0;
@@ -321,6 +318,7 @@ section.activity {
 .portfolio-elements {
   display: flex;
   flex-wrap: wrap;
+  margin: calc(-1 + var(--size-padding-portfolio) / 2);
 
   justify-content: center;
   padding-left: 0;
@@ -332,9 +330,14 @@ section.activity {
   max-width: 370px;
   padding-top: 0px;
   margin-bottom: 30px;
-  box-sizing: inherit;
+  /* box-sizing: inherit; */
   border: 1px solid var(--background-portfolio-list-color);
   justify-content: flex-end;
+  /* flex-basis: calc(
+    100% - (var(--item-portfolio-count) * var(--size-padding-portfolio)) /
+      var(--size-padding-portfolio)
+  ); 
+  flex-basis: calc((100%-30px * 4) / 5); */
 }
 .portfolio-item img {
   margin-bottom: 20px;
