@@ -23,25 +23,25 @@
     <header class="stydio-header">
       <div class="container navigate">
         <nav class="main-nav">
-          <a href="./index.html" class="logo">
+          <a href="./index.html" class="logo link">
             <span class="logo-first">Web</span><span class="logo-second">Studio</span>
           </a>
-          <ul class="navigate lists">
+          <ul class="navigate lists list">
             <li class="navigate-item hover-link">
-              <a href="./index.html">Студия</a>
+              <a class="link" href="./index.html">Студия</a>
             </li>
             <li class="navigate-item hover-link">
-              <a class="current" href="./portfolio.html">Портфолио</a>
+              <a class="link current" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="navigate-item hover-link"><a href="#">Контакты</a></li>
+            <li class="navigate-item hover-link"><a class="link" href="#">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="contacts">
+        <ul class="contacts list">
           <li class="hover-link">
-            <a class="contact-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="contact-item link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li class="hover-link">
-            <a class="contact-item" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="contact-item link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -50,7 +50,7 @@
       <h1 class="main-title visually-hidden">Портфолио</h1>
       <section class="section portfolio">
         <div class="container portfolio-container">
-          <ul class="portfolio-btn">
+          <ul class="portfolio-btn list">
             <li>
               <button type="button" class="button-filter">Все</button>
             </li>
@@ -59,10 +59,10 @@
             </li>
             <li><button type="button" class="button-filter">Приложения</button></li>
             <li><button type="button" class="button-filter">Дизайн</button></li>
-            <li><button type="button" class="button-filter">Маркетинг</button></li>
+            <li><button type="button" class="button-filter last">Маркетинг</button></li>
           </ul>
 
-          <ul class="portfolio-elements">
+          <ul class="portfolio-elements list">
             <li class="portfolio-item">
               <img src="./images/portfolio/tehnokrak.jpg" alt="Технокряк" />
               <div class="container-into">
@@ -136,21 +136,27 @@
     </main>
     <footer class="main-footer">
       <div class="container footer">
-        <a href="index.html" class="logo foot">
+        <a href="index.html" class="logo foot link">
           <span class="logo-first">Web</span><span class="logo-third">Studio</span>
         </a>
         <address>
-          <ul class="adress">
-            <li class="adress-map hover-link">
-              <a href="https://goo.gl/maps/BUU7MnYP6HP1QaoV9" target="_blank" rel="external"
+          <ul class="adress list">
+            <li class="adress-item map hover-link">
+              <a
+                class="link"
+                href="https://goo.gl/maps/BUU7MnYP6HP1QaoV9"
+                target="_blank"
+                rel="external"
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li class="adress-email hover-link">
-              <a href="mailto:info@example.com">info@example.com</a>
+            <li class="adress-item hover-link">
+              <a class="link" href="mailto:info@example.com">info@example.com</a>
             </li>
 
-            <li class="adress-tel hover-link"><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+            <li class="adress-item hover-link">
+              <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>
