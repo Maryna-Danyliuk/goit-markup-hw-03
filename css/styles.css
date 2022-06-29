@@ -369,16 +369,19 @@ section.activity {
   display: block;
   margin-bottom: 20px;
 }
-.adress-item a {
+.adress-item {
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  margin-bottom: 9px;
+
   letter-spacing: 0.03em;
   color: var(--footer-addres-color);
 }
-.adress-item.map a {
+.adress-list:not(:last-child) {
+  margin-bottom: 9px;
+}
+.map {
   color: var(--background-color);
 }
 .logo-third {
